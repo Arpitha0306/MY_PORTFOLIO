@@ -20,9 +20,26 @@ function type() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", type);
+document.addEventListener("DOMContentLoaded", () => {
+  type();
 
-// Smooth Scrolling
+  // Scroll reveal animation for sections
+  const sections = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  sections.forEach(section => observer.observe(section));
+});
+
+// Smooth Scrolling for nav links
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -32,7 +49,7 @@ document.querySelectorAll("nav a").forEach(link => {
   });
 });
 
-// Scroll to top button
+// Scroll to top button logic
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.onscroll = function () {
