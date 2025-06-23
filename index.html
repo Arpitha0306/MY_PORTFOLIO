@@ -1,99 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpitha P - Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
+
 <body>
+  <div class="container">
 
-  <header>
-    <div class="container">
-      
-    <h1>ARPITHA P</h1>
-    <p><span id="typed-text"></span><span class="cursor">|</span></p>
-    <img src="photo3.jpg" alt="Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-top: 10px;" />
-  </div>
+    <!-- Header -->
+    <div class="card header-card">
+      <div class="header-content">
+        <div class="profile-info">
+          <h1>Arpitha P</h1>
+          <p class="role">Software Engineer</p>
+          <p>Email: <a href="mailto:aarpitha214@gmail.com">aarpitha214@gmail.com</a></p>
+          <p>Phone: +91-8951541566</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/arpitha-p-75bb81234"
+              target="_blank">linkedin.com/in/arpitha-p</a></p>
+          <a class="resume-btn"
+            href="https://drive.google.com/file/d/1eiMPDbb6X_XQ2DARO0GZqeq9MCAhj7bo/view?usp=drive_link"
+            target="_blank">Download Resume</a>
+        </div>
+        <div class="profile-photo">
+          <img src="photo3.jpg" alt="Profile Photo" />
+        </div>
+      </div>
     </div>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Eductaion</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Objective -->
+    <div class="card">
+      <h2>Objective</h2>
+      <p>
+        I am passionate about leveraging technology to create meaningful impact. I aspire to be part of a dynamic team
+        where I can continuously learn, contribute effectively, and help develop innovative software solutions that make
+        a real difference in people’s lives.
+      </p>
+    </div>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate Software Engineer with a strong foundation in web technologies, backend development, and full-stack projects. I love building meaningful software solutions and continuously learning new tools and technologies.
-    </p>
-  </section>
-
-  <section id="education" class="card">
-    <div class="container">
-      <h2>Education</h2>
+    <!-- Skills -->
+<div class="card">
+  <h2>Skills</h2>
+  <div class="info-cards-container">
+    <div class="info-card">
+      <h3>Java</h3>
       <ul>
-        <li><strong>B.E. in Computer Science</strong> – Impact College of enfineeering and applied sciences (2021–2025)</li>
-        <li><strong>PUC</strong> – Sahayadri PU College (2021)</li>
-        <li><strong>SSLC</strong> – Suvarna Central Scholl School (2019)</li>
+        <li>OOP concepts, Method Overloading/Overriding</li>
+        <li>Exception handling, Collections Framework</li>
+        <li>Multithreading and thread synchronization</li>
       </ul>
     </div>
-  </section>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JAVA</li>
-      <li>JavaScript</li>
-      <li>SQL</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+    <div class="info-card">
+      <h3>JDBC</h3>
+      <ul>
+        <li>CRUD operations with JDBC API</li>
+        <li>PreparedStatement, CallableStatement</li>
+        <li>Connection & Transaction management</li>
+      </ul>
+    </div>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Online Attendence Tracker</h3>
-      <p>An online attendance tracker helps automate the process of marking attendance using a web application. It allows users (like students or employees) to check in/out through the internet, while admins or managers can view reports, monitor absentees, and generate summaries in real-time.</p>
-      <a href="https://arpitha0306.github.io/AttendenceTracker/">project link</a>
+    <div class="info-card">
+      <h3>Servlets</h3>
+      <ul>
+        <li>Developed server-side logic</li>
+        <li>Managed HTTP request/response cycles</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>Web (HTML, CSS, JS)</h3>
+      <ul>
+        <li>Forms, navigation menus, lists, media elements</li>
+        <li>DOM manipulation, event handling</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>React</h3>
+      <ul>
+        <li>JSX, Components, Props, State</li>
+        <li>Hooks (useState, useEffect), API Integration</li>
+        <li>React Router for navigation</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>SQL</h3>
+      <ul>
+        <li>Basic Oracle SQL queries</li>
+        <li>CRUD operations, Joins, Filtering</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Internships -->
+    <div class="card">
+      <h2>Internships</h2>
+      <div class="info-cards-container">
+        <div class="info-card">
+          <h3>Full Stack Development Intern</h3>
+          <p><strong>Company:</strong> Dhee Coding Lab</p>
+          <p><strong>Duration:</strong> Nov 2024 – Jun 2025</p>
+        </div>
+        <div class="info-card">
+          <h3>Machine Learning & Data Science Intern</h3>
+          <p><strong>Company:</strong> Karunadu Technologies</p>
+          <p><strong>Duration:</strong> Oct 2023 – Nov 2023</p>
+        </div>
+        <div class="info-card">
+          <h3>Python & PyQt5 Intern</h3>
+          <p><strong>Company:</strong> Karunadu Technologies</p>
+          <p><strong>Duration:</strong> Oct 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+      <h2>Education</h2>
+      <div class="info-cards-container">
+        <div class="info-card">
+          <h3>B.E. in Computer Science</h3>
+          <p><strong>Institution:</strong> Impact College of Engineering and Applied Sciences</p>
+          <p><strong>Year:</strong> 2021 – 2025</p>
+          <p><strong>CGPA:</strong> 8.2</p>
+        </div>
+        <div class="info-card">
+          <h3>PUC</h3>
+          <p><strong>Institution:</strong> Sahayadri PU College</p>
+          <p><strong>Year:</strong> 2019 – 2021</p>
+          <p><strong>Percentage:</strong> 86.33%</p>
+        </div>
+        <div class="info-card">
+          <h3>SSLC</h3>
+          <p><strong>Institution:</strong> Suvarna Central School</p>
+          <p><strong>Year:</strong> 2018 – 2019</p>
+          <p><strong>Percentage:</strong> 89.12%</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projects -->
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Smart Waste Segregation using IoT</h3>
+          <p>IoT-based project using Arduino and sensors to classify waste (dry, wet, metal). Integrated C and Java for
+            sensor logic and real-time tracking.</p>
+          <p><strong>Technologies:</strong> Arduino IDE, C, Java</p>
+        </div>
+        <div class="project-card">
+          <h3>Civil Works Finder</h3>
+          <p>Platform to connect users with local engineering workshops using Google Maps API for geo-search and
+            real-time listings.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        </div>
+        <div class="project-card">
+          <h3>Online Attendance Tracker</h3>
+          <p>Automated attendance system using front-end tools and GitHub hosting.</p>
+          <a href="https://arpitha0306.github.io/AttendenceTracker/" target="_blank" class="project-btn">View
+            Project</a>
+        </div>
       
-     
-
-    </div>
-    <div class="project">
-      <h3>Online Workshop Booking System</h3>
-      <p>A full-stack web app for booking local engineering workshops using React, Node, Express, and MongoDB.</p>
+      </div>
     </div>
 
-    
-    <div class="project">
-      <h3>Waste Segregation IoT Dashboard</h3>
-      <p>Smart waste management system using Arduino Uno, sensors, and real-time web dashboard.</p>
+
+
+    <!-- Contact -->
+<div class="card">
+  <h2>Contact</h2>
+  <div class="info-cards-container">
+    <div class="info-card">
+      <h3>Email</h3>
+      <p><a href="mailto:aarpitha214@gmail.com">aarpitha214@gmail.com</a></p>
     </div>
-  </section>
+    <div class="info-card">
+      <h3>Phone</h3>
+      <p>+91-8951541566</p>
+    </div>
+    <div class="info-card">
+      <h3>LinkedIn</h3>
+      <p><a href="https://www.linkedin.com/in/arpitha-p-75bb81234" target="_blank">linkedin.com/in/arpitha-p</a></p>
+    </div>
+  </div>
+</div>
 
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: aarpitha214@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofilewww.linkedin.com/in/
-      arpitha-p-75bb81234" target="_blank">linkedin.com/in/yourprofile</a></p>
-    
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Arpitha P. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <div class="card footer-card">
+      <p>&copy; 2025 Arpitha P. All rights reserved.</p>
+    </div>
 
-  <button id="scrollTopBtn" title="Go to top">↑</button>
-
+  </div>
 </body>
+
 </html>
