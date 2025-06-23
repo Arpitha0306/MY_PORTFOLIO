@@ -20,7 +20,7 @@ body {
   gap: 30px;
 }
 
-/* Card layout for all sections */
+/* All cards */
 .card {
   background: #fff;
   border-radius: 12px;
@@ -33,57 +33,105 @@ body {
   transform: translateY(-3px);
 }
 
-/* Header styling */
+/* HEADER FIX - SOLUTION */
 .header-card {
   background: linear-gradient(135deg, #e6f2ff, #cfe2ff);
+  padding: 30px;
 }
 
 .header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .profile-info {
+  flex: 2;
+  max-width: 65%;
+}
+
+.profile-photo {
   flex: 1;
-}
-
-.profile-info h1 {
-  font-size: 2.2rem;
-  color: #003366;
-}
-
-.role {
-  font-size: 1.1rem;
-  color: #555;
-  margin: 10px 0;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .profile-photo img {
-  width: 180px;
-  height: 180px;
-  border-radius: 10%;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
+  border-radius: 50%;
   border: 3px solid #0056b3;
+}
+
+/* Text styling */
+.profile-info h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #002244;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.profile-info h2 {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #002244;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 12px;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.profile-info a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.profile-info a:hover {
+  text-decoration: underline;
 }
 
 .resume-btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   background-color: #007bff;
   color: white;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
 }
 
 .resume-btn:hover {
   background-color: #0056b3;
 }
 
-/* Reusable container for grid-based cards */
+/* Grid-based sections: Skills, Internships, Education, Contact */
 .info-cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -118,7 +166,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* Projects-specific layout (reuses grid structure) */
+/* Projects-specific layout */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -160,4 +208,22 @@ body {
   font-size: 0.9rem;
   color: #666;
   padding: 15px;
+}
+
+/* RESPONSIVE HEADER FIX */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .profile-info {
+    max-width: 100%;
+  }
 }
